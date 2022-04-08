@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply border-[1px] bg-[#2d60ba] border-[#2d60ba] text-white  rounded-md py-2 lg:px-20 px-16;
+  }
+  .input {
+    @apply py-2 pl-12 w-[250px] sm:w-full pr-10 border-2 border-blue-primary rounded-md  focus:outline-none;
+  }
+  .sign-in-icon {
+    @apply px-3 absolute top-1/2 left-0 translate-y-[-50%] inline-block h-[44px] leading-[44px] overflow-hidden rounded-l-md bg-blue-primary border-blue-primary text-white;
+  }
+  .position-eyes {
+    @apply absolute top-1/2 translate-y-[-50%] right-0 p-3 text-blue-primary border-blue-primary;
+  }
+  .border-cell-table {
+    @apply border-2 border-gray-300 py-2 px-2;
+  }
+  .hidden-cell-table {
+    @apply hidden md:table-cell;
+  }
+  .hover-icon-table {
+    @apply transition-colors hover:text-blue-primary;
+  }
+  .avatar {
+    @apply mt-0 pt-4 w-full pr-8 md:pr-12 flex items-center justify-end;
+  }
+  .table-list {
+    @apply flex flex-col justify-center items-center w-full mt-9;
+  }
+  .table-custom {
+    @apply table-auto w-[90vw] md:w-[80vw] lg:w-[60vw] border-collapse border border-slate-500 text-center mb-3 mt-4 rounded-lg shadow-lg;
+  }
+  .over-play-modal {
+    @apply bg-[rgba(1,1,1,0.2)] absolute top-0 left-0 w-full h-full mx-auto flex items-center  z-[999];
+  }
+  .styled-modal {
+    @apply bg-white rounded-lg shadow-lg w-full sm:w-[80%] md:w-[60vw] mx-auto h-full  sm:h-[80%] outline-none z-[99];
+  }
+  .btn-close-modal {
+    @apply box-content w-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline;
+  }
+  .btn-mode {
+    @apply rounded-md shadow-lg px-5 py-1.5 text-white font-medium text-xl leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out;
+  }
+}
